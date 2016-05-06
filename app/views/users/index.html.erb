@@ -1,0 +1,17 @@
+<div class="new-user-form">
+  <h2>New user</h2>
+  <form action="#">
+    <input type="text" name="users[name]">
+    <button type="submit">Create new user</button>
+  </form>
+</div>
+
+<div class="list-of-users"></div>
+
+<script type="text/template" id="user-template">
+  <h3>{{= username }}</h3>
+  <form action="#">
+    <input type="text" name="users[name]" value="{{= username }}">
+    <button type="submit">edit user</button>
+  </form>
+</script>
